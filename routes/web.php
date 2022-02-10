@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,24 +14,27 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 
 
 Route::get('/', [PagesController::class,'index']);
 Route::get('/about', [PagesController::class,'about']);
 Route::get('/services', [PagesController::class,'services']);
-// Route::get('/', 'PagesController@index');
+
 
 Route::get('/hello', function () {
     return '<h1>Olá hugo!</h1>';
 });
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+
 
 Route::get('/users/{id}', function ($id) {
     return 'This is the user '.$id;
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::resource('posts', PostController::class);

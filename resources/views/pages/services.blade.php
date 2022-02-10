@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>{{ env('APP_NAME') }} v{{ env('APP_VERSION') }} </title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
        
-    </head>
-    <body>
 
-        <h1>Serviços</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, animi tempore, fugit quaerat qui itaque perferendis aliquam architecto veritatis consequuntur delectus similique placeat modi adipisci fuga assumenda. Atque, deleniti ad.</p>
-    
-    </body>
-</html>
+        <h1>{{ $title }}</h1>
+        @if (count($services)>0)
+                <ul>
+                        @foreach ($services as $s)
+                        
+                                <li>{{ $s }}</li>
+
+                        @endforeach
+                </ul>
+        @endif
+
+@endsection

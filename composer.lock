@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65e85f9f959c0b087110331754d451cf",
+    "content-hash": "4ea4b32ee6739b4df7444cd07a7a846c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -961,16 +961,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.0.1",
+            "version": "v9.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "afeb58d019b203ecb1a1c4063a66a029ea6bea63"
+                "reference": "4c7cd8c4e95d161c0c6ada6efa0a5af4d0d487c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/afeb58d019b203ecb1a1c4063a66a029ea6bea63",
-                "reference": "afeb58d019b203ecb1a1c4063a66a029ea6bea63",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/4c7cd8c4e95d161c0c6ada6efa0a5af4d0d487c9",
+                "reference": "4c7cd8c4e95d161c0c6ada6efa0a5af4d0d487c9",
                 "shasum": ""
             },
             "require": {
@@ -1136,7 +1136,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-02-09T15:00:05+00:00"
+            "time": "2022-02-10T15:07:46+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1330,6 +1330,67 @@
             "time": "2022-01-10T08:52:49+00:00"
         },
         {
+            "name": "laravel/ui",
+            "version": "v3.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "64a0f43492c00780b2261c56cd7007a4f370d95b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/64a0f43492c00780b2261c56cd7007a4f370d95b",
+                "reference": "64a0f43492c00780b2261c56cd7007a4f370d95b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42|^9.0",
+                "illuminate/filesystem": "^8.42|^9.0",
+                "illuminate/support": "^8.82|^9.0",
+                "illuminate/validation": "^8.42|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.23|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.4.3"
+            },
+            "time": "2022-02-08T14:19:32+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "2.2.1",
             "source": {
@@ -1517,16 +1578,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "9f8b4260031bfef5497477da53dd57b2aaff0e06"
+                "reference": "aef771741948595bfbed8e0342dd340695a368ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9f8b4260031bfef5497477da53dd57b2aaff0e06",
-                "reference": "9f8b4260031bfef5497477da53dd57b2aaff0e06",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/aef771741948595bfbed8e0342dd340695a368ff",
+                "reference": "aef771741948595bfbed8e0342dd340695a368ff",
                 "shasum": ""
             },
             "require": {
@@ -1586,7 +1647,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.0.3"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.0.4"
             },
             "funding": [
                 {
@@ -1602,7 +1663,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-31T19:41:04+00:00"
+            "time": "2022-02-10T16:14:03+00:00"
         },
         {
             "name": "league/mime-type-detection",
