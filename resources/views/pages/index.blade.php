@@ -14,8 +14,7 @@
     </head>
     <body>
 
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias nostrum sunt ipsam, soluta, adipisci non a nemo laboriosam, autem doloremque? Odio, in perferendis vero iste ipsam neque commodi nesciunt!</p>
-    
+        <h1>Bem vindo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi vitae deleniti quod unde. Consequuntur corrupti cupiditate debitis in, deleniti maiores delectus ab animi? Explicabo enim sed error modi accusamus?</p>
     </body>
 </html>
