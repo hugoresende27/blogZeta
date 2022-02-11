@@ -1,6 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+
+    .meuBtn:hover{
+        background-color: rgb(248, 248, 248);
+        color: rgb(0, 0, 0);
+        border: none;
+        transform: scale(1.5);
+    }
+
+</style>
+
+
+<div class="text-center mb-4">
+    <a href="/posts/create" class="btn btn-success meuBtn">Criar Post</a>
+</div>   
 
 
         <h1>Últimos Posts</h1>

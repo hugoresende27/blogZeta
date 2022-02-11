@@ -38,3 +38,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::resource('posts', PostController::class);
+Route::post('/posts/create',  [\App\Http\Controllers\PostController::class,'store'])->name('guardar_post');

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Post;
 
+use DB;
+
 class PostController extends Controller
 {
     /**
@@ -15,7 +17,11 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        // $posts = Post::all();
+        // $posts = DB::select('select * from posts ');
+
+        $posts = Post::orderBy('created_at','desc')->get();
+        
         return view('posts.index')->with('posts',$posts);  
     }
 
@@ -26,7 +32,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -37,7 +43,12 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title'=>'required',
+            'body'=>'required',
+        ]);
+
+        return 143;
     }
 
     /**
