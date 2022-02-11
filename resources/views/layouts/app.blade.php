@@ -30,10 +30,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:1rem;font-family: 'Verdana';font-weight:900;">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                       {{-- {{ dd( Request::segment(1)) }}   --}}
+                        
+                        @if ((Request::segment(1) != 'posts') && Auth::user())
 
+                            <li class="nav-item">
+                                <a href="posts/create" class="nav-link">Adicionar Post</a>
+                            </li>
+                            
+                        @endif
+                         
+                       
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -88,6 +98,9 @@
         </nav>
 
         <main class="py-4 container">
+
+            @include('inc.messages')
+            
             @yield('content')
         </main>
     </div>
